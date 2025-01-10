@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:vercel_app/core/constants/app_colors.dart';
+import 'package:vercel_app/core/constants/app_icons.dart';
 
 import '../widgets/internet_status_widget.dart';
 
@@ -39,11 +40,10 @@ class HomeWrapperWidgetState extends State<HomeWrapperWidget> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            IconButton(onPressed: (){}, icon: const Icon(Icons.home),),
-            IconButton(onPressed: (){}, icon: const Icon(Icons.local_activity),),
-            IconButton(onPressed: (){}, icon: const Icon(Icons.analytics),),
-            IconButton(onPressed: (){}, icon: const Icon(Icons.data_usage),),
-            IconButton(onPressed: (){}, icon: const Icon(Icons.integration_instructions),),
+            IconButton(onPressed: (){}, icon: const Icon(AppIcons.home),),
+            IconButton(onPressed: (){}, icon: const Icon(AppIcons.usage),),
+            IconButton(onPressed: (){}, icon: const Icon(AppIcons.notification),),
+            IconButton(onPressed: (){}, icon: const Icon(AppIcons.profile),),
           ],
         ),
         ),
